@@ -1344,6 +1344,7 @@ export default function App() {
                     activeTabId={activeId}
                     onSelectTab={setActiveId}
                     onCloseTab={handleClose}
+                    onNewTab={openNewTab}
                     activeEditorHandle={activeEditorHandle}
                   />
                 </div>
