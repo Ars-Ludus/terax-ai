@@ -157,7 +157,9 @@ export const EditorPane = forwardRef<EditorPaneHandle, Props>(
                     ? s.ollamaModelId
                     : p === "openai-compatible"
                       ? s.openaiCompatibleModelId
-                      : s.autocompleteModelId;
+                      : p === "openrouter"
+                        ? s.openrouterModelId
+                        : s.autocompleteModelId;
             return {
               enabled: s.autocompleteEnabled,
               provider: p,
